@@ -42,7 +42,6 @@
         </ul>
       </div>
     </nav>
-    <b class="page-header__title">В путешествие с крутыми попутчиками!</b>
   </header>
 
   <main class="page-main">
@@ -50,13 +49,7 @@
     <h1 class="visually-hidden">«Погнали?» - сервис по подбору попутчиков</h1>
 
     <section class="about">
-      <header class="about__header">
-        <h2 class="about__title">О сервисе</h2>
-        <p class="about__text">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.<br>
-          <b>А если найдете кого-то близкого по духу - скорее зовите на совместный трип!</b>
-        </p>
-      </header>
+      <b class="page-header__slogan">В путешествие с крутыми попутчиками!</b>
       <blockquote class="about__review review">
         <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
         <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
@@ -67,39 +60,58 @@
         <li class="plan__item">Находите тех, кто похож на вас</li>
         <li class="plan__item">Путешествуйте вместе!</li>
       </ul>
+      <h2 class="about__title">О сервисе</h2>
+      <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+      <p class="about__text">
+        <b>А если найдете кого-то близкого по духу - скорее зовите на совместный трип!</b>
+      </p>
     </section>
 
     <section class="directions">
       <div class="directions__wrapper">
         <h2 class="directions__title">Направления</h2>
         <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="directions__list">
-          <li class="directions__item directions__item--thailand-flag">
-            <a class="directions__link" href="#">
-              <h3 class="directions__country">Тайланд</h3>
-              <img class="directions__image" src="img/country-1.jpg" width="270" height="110" alt="Тайланд">
-              <p class="directions__text--opacity">Джунгли зовут!</p>
-              <span class="directions__views">18321</span>
+        <ul class="directions__list country">
+          <li class="country__item">
+            <a class="country__link" href="#">
+              <img class="country__image" src="img/country-1.jpg" width="270" height="110" alt="Тайланд">
             </a>
+            <div class="country__wrapper">
+              <img class="country__flag" src="img/flag-tai.png" width="26" height="18" alt="Флаг Тайланда">
+              <a class="country__link" href="#">
+                <h3 class="country__title">Тайланд</h3>
+              </a>
+              <p class="country__text">Джунгли зовут!</p>
+              <span class="country__views">18321</span>
+            </div>
           </li>
-          <li class="directions__item directions__item--france-flag">
-            <a class="directions__link" href="#">
-              <h3 class="directions__country">Франция</h3>
-              <img class="directions__image" src="img/country-2.jpg" width="270" height="110" alt="Франция">
-              <p class="directions__text--opacity">Трэ бьен, манифик!</p>
-              <span class="descriptions__views">12518</span>
+          <li class="country__item">
+            <a class="country__link" href="#"></a>
+            <img class="country__image" src="img/country-2.jpg" width="270" height="110" alt="Франция">
             </a>
+            <div class="country__wrapper">
+              <img class="country__flag" src="img/flag-fra.png" width="26" height="18" alt="Флаг Франции">
+              <a class="country__link" href="#">
+                <h3 class="country__title">Франция</h3>
+              </a>
+              <p class="country__text">Трэ бьен, манифик!</p>
+              <span class="country__views">12518</span>
+            </div>
           </li>
-          <li class="directions_item directions__item--czech-flag">
-            <a class="directions__link" href="#">
-              <h3 class="directions__country">Чехия</h3>
-              <img class="directions__image" src="img/country-3.jpg" width="270" height="110" alt="Чехия">
-              <p class="directions__text--opacity">Закоулки старой Европы</p>
-              <span class="descriptions__views">5326</span>
+          <li class="country__item">
+            <a class="country__link" href="#">
+              <img class="country__image" src="img/country-3.jpg" width="270" height="110" alt="Чехия">
             </a>
+            <div class="country__wrapper">
+              <img class="country__flag" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
+              <a class="country__link" href="#">
+                <h3 class="country__title">Чехия</h3>
+              </a>
+              <p class="country__text">Закоулки старой Европы</p>
+              <span class="country__views">5326</span>
+            </div>
           </li>
-        </ul>
-        <a class="directions__to-all button" href="#">Показать все</a>
+          <a class="directions__to-all button" href="#">Показать все</a>
       </div>
     </section>
 
@@ -110,46 +122,64 @@
         <ul class="companions__list popular">
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <h3 class="popular__name popular__name--red-circle">Таня Фирсова</h3>
-              <img class="popular__image" src="img/companion-1.jpg" width="270" height="270" alt="Фотография Тани">
+              <img class="popular__image" src="img/companion-1.jpg" width="270" height="270" alt="Аватар Тани">
             </a>
-            <p class="popular__flags flag">
-              <span class="flag__sri">Шри-Ланка</span>
-              <span class="flag__tai">Таиланд</span>
-              <span class="flag__sey">Сейшелы</span>
-            </p>
-            <p class="popular__tegs">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            <p class="popular__movement movement">
-              <button class="movement__airplane" type="button">Самолет</button>
-              <button class="movement__bus" type="button">Автобус</button>
-              <button class="movement__bicycle" type="button">Велосипед</button>
-              <button class="movement__run" type="button">Бег</button>
-            </p>
-            <p class="popular__level">
-              <b class="popular__level--number">99</b>
-              <span class="popular__level--string">level</span>
-            </p>
+            <div class="popular__level">
+              <b>99</b>
+              <span>level</span>
+            </div>
+            <div class="popular__wrapper">
+              <div class="popular__flags flag">
+                <a class="flag__link">
+                  <img class="flag__image" src="img/flag-sri.png" width="26" height="18" alt="Флаг Шри-Ланки">
+                </a>
+                <a class="flag__link">
+                  <img class="flag__image" src="img/flag-tai.png" width="26" height="18" alt="Флаг Тайланда">
+                </a>
+                <a class="flag__link">
+                  <img class="flag__image" src="img/flag-sey.png" width="26" height="18" alt="Флаг Сейшел">
+                </a>
+              </div>
+              <a class="popular__link" href="#">
+                <h3 class="popular__title">Таня Фирсова</h3>
+              </a>
+              <p class="popular__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <div class="popular__movement movement">
+                <a class="movement__airplane" type="button">Самолет</a>
+                <a class="movement__bus" type="button">Автобус</a>
+                <a class="movement__bicycle" type="button">Велосипед</a>
+                <a class="movement__run" type="button">Бег</a>
+              </div>
+            </div>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <h3 class="popular__name companion__popular--green-circle">Петя Демин</h3>
-              <img class="popular__image" src="img/companion-2.jpg" width="270" height="270" alt="Фотография Пети">
+              <img class="popular__image" src="img/companion-2.jpg" width="270" height="270" alt="Аватар Пети">
             </a>
-            <p class="popular__flag">
-              <span class="flag__blg">Бельгия</span>
-              <span class="flag__Czh">Чехия</span>
-            </p>
-            <p class="popular__movement">
-              <button class="popular__movement--airplane" type="button">Самолет</button>
-              <button class="popular__movement--bus" type="button">Автобус</button>
-              <button class="popular__movement--bicycle" type="button">Велосипед</button>
-              <button class="popular__movement--run" type="button">Бег</button>
-            </p>
-            <p class="popular__tegs">#бургер #бар #футбол #концерт #крафт</p>
-            <p class="popular__level">
-              <b class="popular__level--number">80</b>
-              <span class="popular__level--string">level</span>
-            </p>
+            <div class="popular__level">
+              <b>80</b>
+              <span>level</span>
+            </div>
+            <div class="popular__wrapper">
+              <div class="popular__flags flag">
+                <a class="flag__link">
+                  <img class="flag__image" src="img/flag-blg.png" width="26" height="18" alt="Флаг Бельгии">
+                </a>
+                <a class="flag__link">
+                  <img class="flag__image" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
+                </a>
+              </div>
+              <a class="popular__link" href="#">
+                <h3 class="popular__title">Петя Демин</h3>
+              </a>
+              <p class="popular__tags">#бургер #бар #футбол #концерт #крафт</p>
+              <div class="popular__movement movement">
+                <a class="movement__airplane" type="button">Самолет</a>
+                <a class="movement__bus" type="button">Автобус</a>
+                <a class="movement__bicycle" type="button">Велосипед</a>
+                <a class="movement__run" type="button">Бег</a>
+              </div>
+            </div>
           </li>
         </ul>
         <a class="popular__to-all button" href="#">Показать всех</a>
@@ -160,9 +190,9 @@
       <div class="profile__wrapper">
         <h2 class="profile__title">Добавьте свой профиль</h2>
         <ul class="profile-list">
-          <li class="profile__item profile__item--darkorange-circle">Базовое размещение бесплатно</li>
-          <li class="profile__item profile__item--orange-circle">Вывод на первых позициях 99руб./мес</li>
-          <li class="profile__item profile__item--yellow-circle">Кастомный цвет карточки 59руб./мес</li>
+          <li class="profile__item">Базовое размещение бесплатно</li>
+          <li class="profile__item">Вывод на первых позициях 99руб./мес</li>
+          <li class="profile__item">Кастомный цвет карточки 59руб./мес</li>
         </ul>
         <button class="profile__to-business" type="button">Показать тарифы для бизнеса</button>
       </div>
