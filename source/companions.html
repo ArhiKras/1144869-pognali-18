@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/#" width="100" height="19" alt="Логотип «Погнали?»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="directions.html">Направления</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__call" href="#">Позвонить нам</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__write" href="#">Написать нам</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Авторизация</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="page-main__title">Попутчики</h1>
+
+    <section class="companions">
+      <div class="companions__wrapper">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <ul class="companions__list">
+          <li class="companions__item">
+            <header class="companions__header">
+              <div class="companions__avatar">
+                <a class="companions__link" href="#">
+                  <img class="companions__image" src="img/companion-small-1.jpg" width="70" height="70" alt="Аватар Тани">
+                </a>
+                <button class="companions__like" type="button">Лайк</button>
+              </div>
+              <div class="companions__person">
+                <a class="companions__link" href="#">
+                  <h3 class="companions__name">Таня Фирсова</h3>
+                </a>
+                <span class="companions__quantity-likes">1,5 M</span>
+              </div>
+            </header>
+            <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="companions__flags flag">
+              <h4 class="flag__title">хочет посетить:</h4>
+              <ul class="flag__list">
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-sri.png" width="26" height="18" alt="Флаг Шри-Ланки">
+                  <span>Шри-Ланка</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-tai.png" width="26" height="18" alt="Флаг Тайланда">
+                  <span>Таиланд</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-sey.png" width="26" height="18" alt="Флаг Сейшел">
+                  <span>Сейшелы</span>
+                </li>
+              </ul>
+            </div>
+            <div class="companions__movement movement">
+              <h4 class="movement__title">транспорт:</h4>
+              <a class="movement__airplane">Самолет</a>
+              <a class="movement__bus">Автобус</a>
+              <a class="movement__bicycle">Велосипед</a>
+              <a class="movement__run">Бег</a>
+            </div>
+            <div class="companions__level">
+              <h4 class="companions__level-title">level:</h4>
+              <b class="companions__level-value">99</b>
+            </div>
+            <button class="companions__call" type="button">Позвать</button>
+          </li>
+          <li class="companions__item">
+            <header class="companions__header">
+              <div class="companions__avatar">
+                <a class="companions__link" href="#">
+                  <img class="companions__image" src="img/companion-small-2.jpg" width="70" height="70" alt="Аватар Пети">
+                </a>
+                <button class="companions__like" type="button">Лайк</button>
+              </div>
+              <div class="companions__person">
+                <a class="companions__link" href="#">
+                  <h3 class="companions__name">Петя Демин</h3>
+                </a>
+                <span class="companions__quantity-likes">150</span>
+              </div>
+            </header>
+            <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="companions__flags flag">
+              <h4 class="flag__title">хочет посетить:</h4>
+              <ul class="flag__list">
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-blg.png" width="26" height="18" alt="Флаг Бельгии">
+                  <span>Бельгия</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
+                  <span>Чехия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="companions__movement movement">
+              <h4 class="movement__title">транспорт:</h4>
+              <a class="movement__airplane">Самолет</a>
+              <a class="movement__bus">Автобус</a>
+              <a class="movement__bicycle">Велосипед</a>
+              <a class="movement__run">Бег</a>
+            </div>
+            <div class="companions__level">
+              <h4 class="companions__level-title">level:</h4>
+              <b class="companions__level-value">80</b>
+            </div>
+            <button class="companions__call" type="button">Позвать</button>
+          </li>
+          <li class="companions__item">
+            <header class="companions__header">
+              <div class="companions__avatar">
+                <a class="companions__link" href="#">
+                  <img class="companions__image" src="img/companion-small-3.jpg" width="70" height="70" alt="Аватар Марка">
+                </a>
+                <button class="companions__like" type="button">Лайк</button>
+              </div>
+              <div class="companions__person">
+                <a class="companions__link" href="#">
+                  <h3 class="companions__name">Марк Смолов</h3>
+                </a>
+                <span class="companions__quantity-likes">1700</span>
+              </div>
+            </header>
+            <p class="companions__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="companions__flags flag">
+              <h4 class="flag__title">хочет посетить:</h4>
+              <ul class="flag__list">
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-usa.png" width="26" height="18" alt="Флаг США">
+                  <span>США</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-aus.png" width="26" height="18" alt="Флаг Австралии">
+                  <span>Австралия</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-dom.png" width="26" height="18" alt="Флаг Доминиканы">
+                  <span>Доминикана</span>
+                </li>
+              </ul>
+            </div>
+            <div class="companions__movement movement">
+              <h4 class="movement__title">транспорт:</h4>
+              <a class="movement__airplane">Самолет</a>
+              <a class="movement__bus">Автобус</a>
+              <a class="movement__bicycle">Велосипед</a>
+              <a class="movement__run">Бег</a>
+            </div>
+            <div class="companions__level">
+              <h4 class="companions__level-title">level:</h4>
+              <b class="companions__level-value">25</b>
+            </div>
+            <button class="companions__call" type="button">Позвать</button>
+          </li>
+          <li class="companions__item">
+            <header class="companions__header">
+              <div class="companions__avatar">
+                <a class="companions_link" href="#">
+                  <img class="companions__image" src="img/companion-small-4.jpg" width="70" height="70" alt="Аватар Ларисы">
+                </a>
+                <button class="companions__like" type="button">Лайк</button>
+              </div>
+              <div class="companions__person">
+                <a class="companions__link" href="#">
+                  <h3 class="companions__name">Лариса Роговая</h3>
+                </a>
+                <span class="companions__quantity-likes">23</span>
+              </div>
+            </header>
+            <p class="companions__tags">#образование #карьера #учеба #линкедин</p>
+            <div class="companions__flags flag">
+              <h4 class="flag__title">хочет посетить:</h4>
+              <ul class="flag__list">
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-gb.png" width="26" height="18" alt="Флаг Великобритании">
+                  <span>Великобритания</span>
+                </li>
+                <li class="flag__item">
+                  <img class="flag__image" src="img/flag-ger.png" width="26" height="18" alt="Флаг Германии">
+                  <span>Германия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="companions__movement movement">
+              <h4 class="movement__title">транспорт:</h4>
+              <a class="movement__airplane">Самолет</a>
+              <a class="movement__bus">Автобус</a>
+              <a class="movement__bicycle">Велосипед</a>
+              <a class="movement__run">Бег</a>
+            </div>
+            <div class="companions__level">
+              <h4 class="companions__level-title">level:</h4>
+              <b class="companions__level-value">50</b>
+            </div>
+            <button class="companions__call" type="button">Позвать</button>
+          </li>
+          <button class="companions__more" type="button">Показать еще</button>
+          <p class="companions__pagination pagination">
+            <div class="pagination__wrapper">
+              <button class="pagination__prev" type="button">Назад</button>
+              <button class="pagination__next" type="button">Вперед</button>
+            </div>
+          </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__lago-image" src="img/#" width="100" height="19" alt="Логотип «Погнали?»">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social_item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social_item">
+            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          </li>
+          <li class="social_item">
+            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
