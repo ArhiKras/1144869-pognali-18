@@ -8,12 +8,15 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--scroll">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/#" width="100" height="19" alt="Логотип «Погнали?»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <!--popup-start-->
+
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -26,18 +29,28 @@
             <a href="companions.html">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__call" href="#">Позвонить нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__write" href="#">Написать нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
+        <a class="main-nav__login button" href="#">Авторизация</a><br>
+        <div class="main-nav__feedback feedback">
+          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a><br>
+          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social_item">
+              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!--popup-end-->
+
     </nav>
   </header>
 
@@ -109,7 +122,7 @@
             </div>
           </li>
         </ul>
-        <a class="directions__to-all button" href="#">Показать все</a>
+        <a class="directions__to-all button" href="directions.html">Показать все</a>
       </div>
     </section>
 
@@ -180,7 +193,7 @@
             </div>
           </li>
         </ul>
-        <a class="popular__to-all button" href="#">Показать всех</a>
+        <a class="popular__to-all button" href="companions.html">Показать всех</a>
       </div>
     </section>
 
@@ -193,6 +206,52 @@
           <li class="profile__item">Кастомный цвет карточки 59руб./мес</li>
         </ul>
         <button class="profile__to-business" type="button">Показать тарифы для бизнеса</button>
+      </div>
+    </section>
+
+    <!--popup-->
+
+    <section class="popup-rates">
+      <div class="popup-rates__wrapper">
+        <h2 class="popup-rates__title">Бизнес-тарифы</h2>
+        <ul class="popup-rates__list">
+          <li class="popup-rates__item">Реклама у блоггера 300 000 руб./пост</li>
+          <li class="popup-rates__item">Накрутка подписчиков от 1 руб./шт.</li>
+          <li class="popup-rates__item">Лайки от ботов от 20 коп./лайк</li>
+          <li class="popup-rates__item">Ваш продакт-плейсмент Индивидуально</li>
+        </ul>
+        <button class="popup-rates__close" type="button">Закрыть окно</button>
+      </div>
+    </section>
+
+    <!--popup-end-->
+
+    <section class="modal-login">
+      <div class="modal-login__wrapper">
+        <h2 class="modal-login__tiitle">Заинтересовались?</h2>
+        <p class="modal-login__text">Зарегестрируйтесь, это быстро и бесплатно! Уже зарегестрированы? Тогда скорее <a class="modal-login__link" href="#">авторизуйтесь.</a></p>
+        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden">
+            <input class="modal-login__field" type="email" name="login" placeholder="E-mail" required>Логин
+          </label>
+          <button class="modal-login__submit" type="submit">Регистрация</button>
+        </form>
+        <div class="modal-login__feedback feedback">
+          <p class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a><br>
+          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal-map">
+      <div class="modal-map__wrapper">
+        <div class="modal-map__adress-wrapper">
+          <h2 class="visually-hidden">Карта</h2>
+          <p class="modal-map__adress">ул. Большая Конюшенная, 19/8</p>
+          <a class="modal-map__route button" href="#">Проложить маршрут</a>
+        </div>
+        <img class="modal-map__image" src="img/map.png" width="320" height="526" alt="Адрес главного офиса ул.Большая Конюшенная 19/8, Санкт-Петербург">
       </div>
     </section>
 
@@ -223,6 +282,9 @@
     </div>
   </footer>
 
+
 </body>
 
 </html>
+
+
