@@ -14,6 +14,9 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <!--popup-start-->
+
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -23,27 +26,316 @@
             <a>Направления</a>
           </li>
           <li class="site-list__item">
-            <a href="companions.html">Попутчики</a>
+            <a>Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__call" href="#">Позвонить нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__write" href="#">Написать нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
+        <a class="main-nav__login button" href="#">Авторизация</a><br>
+        <div class="main-nav__feedback feedback">
+          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social_item">
+              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!--popup-end-->
+
     </nav>
   </header>
 
   <main class="page-main">
 
     <h1 class="page-main__title">Направления</h1>
+
+    <section class="user-profile">
+      <h2 class="visually-hidden">Личный профиль</h2>
+      <div class="user-profile__wrapper">
+        <div class="user-profile__user">
+          <b class="user-profile-value">80</b>
+          <span class="user-profile-text">level</span>
+          <img class="user-profile__image" src="img/companion-small-2.jpg" width="70" height="70" alt="Аватар Пети">
+        </div>
+        <button class="user-profile__change" type="button">Сменить фото</button>
+        <fieldset class="user-profile__fieldset">
+          <legend class="user-profile__legend">тэги</legend>
+          <p class="user-profile__tags"></p>#бургер #бар #футбол #концерт #крафт</p>
+        </fieldset>
+        <fieldset class="user-profile__fieldset">
+          <legend class="user-profile__legend">Транспорт</legend>
+            <form class="user-profile__movement movement" action="https://echo.htmlacademy.ru" method="GET">
+            <label>
+              <input class="movement__airplane" type="checkbox" name="airplane" checked>Самолет
+            </label>
+            <label>
+              <input class="movement__bus" type="checkbox" name="bus" checked>Автобус
+            </label>
+            <label>
+              <input class="movement__bicycle" type="checkbox" name="bicycle">Велосипед
+            </label>
+            <label>
+              <input class="movement__run" type="checkbox" name="run" checked>Бег
+            </label>
+          </form>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="user-plans">
+      <h2 class="user-plans__title">Мои планы:</h2>
+      <div class="user-plans__wrapper">
+        <ol class="user-plans__list">
+          <li class="user-plans__item">
+            <b class="user-plans__country">Франция, Италия</b>
+            <p class="user-plan__text">3 попутчика</p>
+            <p class="user-plan__text">26 мар - 29 мар</p>
+            <a class="user-plan__link" href="#">изменить</a>
+          </li>
+          <li class="user-plans__item">
+            <b class="user-plans__country">Тайланд, Индонезия</b>
+            <p class="user-plan__text">1 попутчик</p>
+            <p class="user-plan__text">1 июл - 15 июл</p>
+            <a class="user-plan__link" href="#">изменить</a>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="add-plan">
+      <div class="add-plan__wrapper">
+        <h2 class="add-plan__title">Шаг 1.<br>Даты пребывания</h2>
+        <p class="add-plan__text">Укажите предпочтительное количество попутчиеов, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="GET">
+          <label>Ищу попутчиков <span class="add-plan__peoples">чел.</span>
+            <input class="add-plan__field" type="text" name="peoples" value="2">
+          </label>
+          <label>Длительность <span class="add-plan__days">дн.</span>
+            <input class="add-plan__field" type="text" name="days" value="2">
+          </label>
+          <label>
+            <input class="add-plan__checkbox" type="checkbox" name="child" checked>Можно с детьми
+          </label>
+        </form>
+        <div class="add-plan__calendar">
+          <time class="add-plan__month-year" datetime="2019-03">Март 2019</time>
+          <table class="add-plan__table">
+            <tr>
+              <th>п</th>
+              <th>в</th>
+              <th>с</th>
+              <th>ч</th>
+              <th>п</th>
+              <th>с</th>
+              <th>в</th>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>31</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </table>
+        </div>
+        <a class="add-plan__next button" href="#">Следующий шаг</a>
+      </div>
+    </section>
+
+    <section class="route">
+      <div class="route__wrapper">
+        <h2 class="route__title">Шаг 2.<br>Маршрут</h2>
+        <p class="rote__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+        <form class="route__form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="route__country-choice">
+            <select class="route__select" name="choice">
+              <option value="bosnia" selected>Босния и Герцеговина</option>
+            </select>
+            <div class="route__country-flag">
+              <img class="route__image" src="img/flag-bos.png" width="26" height="18" alt="Флаг Боснии и Герцеговины">
+              <button class="route__close" type="button">Закрыть</button>
+            </div>
+          </div>
+          <div class="route__country-choice">
+            <select class="route__select" name="choice">
+              <option value="czech" selected>Чехия</option>
+            </select>
+            <div class="route__country-flag">
+              <img class="route__image" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
+              <button class="route__close" type="button">Закрыть</button>
+            </div>
+          </div>
+          <div class="route__country-choice">
+            <select class="route__select" name="choice">
+              <option value="choise" selected>Выберите страну</option>
+            </select>
+            <button class="route__close" type="button">Закрыть</button>
+          </div>
+          <div class="route__popup-wrapper">
+            <button class="route__add-country country-filter__wrapper" type="button">Добавить страну</button>
+
+              <!--popup-start-->
+
+            <section class="country-filter">
+              <div class="country-filter__wrapper">
+                <h2 class="country-filter__title">Выберите страну</h2>
+                <button class="country-filter__toggle country-filter__toggle--close" type="button">Закрыть</button>
+                <div class="country-filter__popup">
+                  <table class="country-filter__table">
+                    <tr>
+                      <td>А</td>
+                      <td>Б</td>
+                      <td>В</td>
+                      <td>Г</td>
+                      <td>Д</td>
+                    </tr>
+                    <tr>
+                      <td>Е</td>
+                      <td>З</td>
+                      <td>И</td>
+                      <td>К</td>
+                      <td>Л</td>
+                    </tr>
+                    <tr>
+                      <td>М</td>
+                      <td>Н</td>
+                      <td>О</td>
+                      <td>П</td>
+                      <td>Р</td>
+                    </tr>
+                    <tr>
+                      <td>С</td>
+                      <td>Т</td>
+                      <td>У</td>
+                      <td>Ф</td>
+                      <td>Х</td>
+                    </tr>
+                    <tr>
+                      <td>Ч</td>
+                      <td>Ш</td>
+                      <td>Э</td>
+                      <td>Ю</td>
+                      <td>Я</td>
+                    </tr>
+                  </table>
+                  <ul class="country-filter__list country">
+                    <li class="country__item">
+                      <a class="country__link">Афганистан</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Албания</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Алжир</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Андорра</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Аргентина</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Армения</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Австралия</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Австрия</a>
+                    </li>
+                    <li class="country__item">
+                      <a class="country__link">Азербайджан</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!--popup-end-->
+
+        </form>
+        <a class="route__next button" href="#">Следующий шаг</a>
+        <a class="route__prev button" href="#">На шаг назад</a>
+      </div>
+    </section>
+
+    <section class="entertainment">
+      <div class="entertainment__wrapper">
+        <h2 class="entertainment__title">Развлечения</h2>
+        <p class="entertainment__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+        <form class="entertainment" action="https://echo.htmlacademy.ru" method="GET">
+          <label>
+            Босния и Герцеговина
+            <img class="entertainment__image" src="img/flag-bos.png" width="26" height="18" alt="Флаг Боснии и Герцеговины">
+            <textarea class="entertainment__tags-field" name="tags"></textarea>
+          </label>
+          <label>
+            Чехия
+            <img class="entertainment__image" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
+            <textarea class="entertainment__tags-field" name="tags">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          </label>
+        </form>
+        <button class="entertainment__submit" type="submit">Отправить</button>
+        <a class="entertainment__prev button" href="#">На шаг назад</a>
+      </div>
+    </section>
 
   </main>
 
