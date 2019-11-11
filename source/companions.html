@@ -14,6 +14,9 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <!--popup-start-->
+
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -26,24 +29,189 @@
             <a>Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__call" href="#">Позвонить нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__write" href="#">Написать нам</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Авторизация</a>
-          </li>
-        </ul>
+        <a class="main-nav__login button" href="#">Авторизация</a><br>
+        <div class="main-nav__feedback feedback">
+          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social_item">
+              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            </li>
+            <li class="social_item">
+              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!--popup-end-->
+
     </nav>
   </header>
 
   <main class="page-main">
 
     <h1 class="page-main__title">Попутчики</h1>
+
+    <section class="country-filter">
+      <div class="country-filter__wrapper">
+        <h2 class="country-filter__title">Фильтрация по странам</h2>
+        <button class="country-filter__toggle country-filter__toggle--close" type="button">...</button>
+
+        <!--popup-start-->
+        <div class="country-filter__popup">
+          <ul class="country-filter__list continent">
+            <li class="continent__item">
+              <a class="continent__link">Европа</a>
+            </li>
+            <li class="continent__item">
+              <a class="continent__link">Азия</a>
+            </li>
+            <li class="continent__item">
+              <a class="continent__link">Америка</a>
+            </li>
+            <li class="continent__item">
+              <a class="continent__link">Острова</a>
+            </li>
+          </ul>
+          <table class="country-filter__table">
+            <tr>
+              <td>А</td>
+              <td>Б</td>
+              <td>В</td>
+              <td>Г</td>
+              <td>Д</td>
+            </tr>
+            <tr>
+              <td>Е</td>
+              <td>З</td>
+              <td>И</td>
+              <td>К</td>
+              <td>Л</td>
+            </tr>
+            <tr>
+              <td>М</td>
+              <td>Н</td>
+              <td>О</td>
+              <td>П</td>
+              <td>Р</td>
+            </tr>
+            <tr>
+              <td>С</td>
+              <td>Т</td>
+              <td>У</td>
+              <td>Ф</td>
+              <td>Х</td>
+            </tr>
+            <tr>
+              <td>Ч</td>
+              <td>Ш</td>
+              <td>Э</td>
+              <td>Ю</td>
+              <td>Я</td>
+            </tr>
+          </table>
+          <ul class="country-filter__list country">
+            <li class="country__item">
+              <a class="country__link">Афганистан</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Албания</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Алжир</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Андорра</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Аргентина</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Армения</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Австралия</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Австрия</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link">Азербайджан</a>
+            </li>
+          </ul>
+          <button class="country-filter__collapse" type="button">Свернуть</button>
+        </div>
+
+        <!--popup-end-->
+
+      </div>
+    </section>
+
+    <section class="companions-filter">
+      <div class="companions-filter__wrapper">
+        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+        <ul class="companions-filter__list">
+          <li class="companions-filter__item companions-filter__item--collapse">Хобби</li>
+          <li class="companions-filter__item companions-filter__item--collapse">
+            Музыка
+            <form class="companions-filter__form-music" action="https://echo.htmlacademy.ru" method="GET">
+              <label>
+                <input class="companions-filter__checkbox" type="checkbox" name="rock" checked>Тяжелый рок
+              </label>
+              <label>
+                <input class="companions-filter__checkbox" type="checkbox" name="rap">Русский рэп
+              </label>
+              <label>
+                <input class="companions-filter__checkbox" type="checkbox" name="euro">Евроденс
+              </label>
+            </form>
+          </li>
+          <li class="companions-filter__item companions-filter__item--collapse">Еда</li>
+          <li class="companions-filter__item companions-filter__item--collapse">
+            Транспорт
+            <form class="companions-filter__form-movement movement" action="https://echo.htmlacademy.ru" method="GET">
+            <label>
+              <input class="movement__airplane" type="checkbox" name="airplane" checked>Самолет
+            </label>
+            <label>
+              <input class="movement__bus" type="checkbox" name="bus" checked>Автобус
+            </label>
+            <label>
+              <input class="movement__bicycle" type="checkbox" name="bicycle">Велосипед
+            </label>
+            <label>
+              <input class="movement__run" type="checkbox" name="run" checked>Бег
+            </label>
+          </form>
+          </li>
+          <li class="companions-filter__item companions-filter__item--collapse">
+            Левел
+            <div class="companions-filter__level-controls">
+              <label>
+                <input class="companions-filter__min-level" type="text" name="min-level" value="30">От
+              </label>
+              <label>
+                <input class="companions-filter__max-level" type="text" name="max-level" value="100">До
+              </label>
+            </div>
+            <div class="companions-filter__range-controls">
+              <div class="companions-filter__scale">
+                <div class="companions-filter__bar"></div>
+              </div>
+              <div class="companions-filter__range-toggle companions-filter__range-toggle-min"></div>
+              <div class="companions-filter__range-toggle companions-filter__range-toggle-max"></div>
+            </div>
+          </li>
+        </ul>
+        <button class="companions-filter__view" type="button">Показать</button>
+      </div>
+    </section>
 
     <section class="companions">
       <div class="companions__wrapper">
