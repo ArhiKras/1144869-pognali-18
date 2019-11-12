@@ -8,15 +8,12 @@
 
 <body>
 
-  <header class="page-header page-header--scroll">
+  <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/#" width="100" height="19" alt="Логотип «Погнали?»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-
-      <!--popup-start-->
-
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -30,27 +27,22 @@
           </li>
         </ul>
         <a class="main-nav__login button" href="#">Авторизация</a><br>
-        <div class="main-nav__feedback feedback">
-          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="main-nav__contacts">
+          <a class="contacts-link" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="main-nav__social social">
-          <ul class="social__list">
-            <li class="social_item">
-              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-            </li>
-            <li class="social_item">
-              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
-            </li>
-            <li class="social_item">
-              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__social-list social">
+          <li class="social_item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social_item">
+            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          </li>
+          <li class="social_item">
+            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+          </li>
+        </ul>
       </div>
-
-      <!--popup-end-->
-
     </nav>
   </header>
 
@@ -209,8 +201,6 @@
       </div>
     </section>
 
-    <!--popup-->
-
     <section class="popup-rates">
       <div class="popup-rates__wrapper">
         <h2 class="popup-rates__title">Бизнес-тарифы</h2>
@@ -224,34 +214,35 @@
       </div>
     </section>
 
-    <!--popup-end-->
-
-    <section class="modal-login">
-      <div class="modal-login__wrapper">
-        <h2 class="modal-login__tiitle">Заинтересовались?</h2>
-        <p class="modal-login__text">Зарегестрируйтесь, это быстро и бесплатно! Уже зарегестрированы? Тогда скорее <a class="modal-login__link" href="#">авторизуйтесь.</a></p>
-        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="visually-hidden">
-            <input class="modal-login__field" type="email" name="login" placeholder="E-mail" required>Логин
-          </label>
-          <button class="modal-login__submit" type="submit">Регистрация</button>
+    <section class="register">
+      <div class="register__wrapper">
+        <h2 class="register__tiitle">Заинтересовались?</h2>
+        <p class="register__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегестрированы? Тогда скорее
+          <a class="register__link" href="#">авторизуйтесь.</a>
+        </p>
+        <form class="register__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="login-field">Логин</label>
+          <input class="register__field" id="login-field" type="email" name="login" placeholder="E-mail" required>
+          <button class="register__submit" type="submit">Регистрация</button>
         </form>
-        <div class="modal-login__feedback feedback">
-          <p class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</p>
-          <a class="feedback__contacts" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="feedback__contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="register__feedback">
+          <p class="register__text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <div class="register__contacts">
+            <a class="contacts-link" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="contacts-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="modal-map">
-      <div class="modal-map__wrapper">
-        <div class="modal-map__adress-wrapper">
+    <section class="map">
+      <div class="map__wrapper">
+        <div class="map__adress-wrapper">
           <h2 class="visually-hidden">Карта</h2>
-          <p class="modal-map__adress">ул. Большая Конюшенная, 19/8</p>
-          <a class="modal-map__route button" href="#">Проложить маршрут</a>
+          <p class="map__adress">ул. Большая Конюшенная, 19/8</p>
+          <a class="map__route button" href="#">Проложить маршрут</a>
         </div>
-        <img class="modal-map__image" src="img/map.png" width="320" height="526" alt="Адрес главного офиса ул.Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="map__image" src="img/map.png" width="320" height="526" alt="Адрес главного офиса ул.Большая Конюшенная 19/8, Санкт-Петербург">
       </div>
     </section>
 
@@ -262,26 +253,23 @@
       <a class="page-footer__logo">
         <img class="page-footer__lago-image" src="img/#" width="100" height="19" alt="Логотип «Погнали?»">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social_item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-          </li>
-          <li class="social_item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
-          </li>
-          <li class="social_item">
-            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social-list social">
+        <li class="social_item">
+          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+        </li>
+        <li class="social_item">
+          <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+        </li>
+        <li class="social_item">
+          <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
-
 
 </body>
 
