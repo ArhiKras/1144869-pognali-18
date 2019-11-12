@@ -54,19 +54,17 @@
       <h2 class="visually-hidden">Личный профиль</h2>
       <div class="user-profile__wrapper">
         <form class="user-profile__form" action="https://echo.htmlacademy.ru" method="GET">
-          <div class="user-profile__user__wrapper">
-            <div class="user-profile__level__wrapper">
-              <b class="user-profile-value">80</b>
-              <span class="user-profile-text">level</span>
+          <div class="user-profile__user-wrapper">
+            <div class="level">
+              <b class="level__value">80</b>
+              <span class="level__text">level</span>
             </div>
             <img class="user-profile__image" src="img/companion-small-2.jpg" width="70" height="70" alt="Аватар Пети">
             <div class="user-profile__button">
               <button class="user-profile__change" type="button">Сменить фото</button>
             </div>
             <fieldset class="user-profile__fieldset">
-              <legend class="user-profile__legend">
-                <label for="tags">тэги</label>
-              </legend>
+              <legend class="user-profile__legend">тэги</legend>
               <textarea class="user-profile__tags" id="tags" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
             <fieldset class="user-profile__fieldset">
@@ -112,24 +110,24 @@
         <h2 class="add-plan__title">Шаг 1.<br>Даты пребывания</h2>
         <p class="add-plan__text">Укажите предпочтительное количество попутчиеов, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
         <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="GET">
-          <div class="add-plan__people-wrapper">
-            <label for="people">
-              <span>Ищу попутчиков</span>
-              <span>чел.</span>
+          <div class="add-plan__input-number-wrapper">
+            <label class="add-plan__label" for="people">
+              <span class="add-plan__span-title">Ищу попутчиков</span>
+              <span class="add-plan__quantity">чел.</span>
             </label>
             <input class="add-plan__field" id="people" type="text" name="people" value="2">
+            <button class="add-plan__button-minus">-</button>
+            <button class="add-plan__button-plus">+</button>
           </div>
-          <button class="add-plan__button-minus">-</button>
-          <button class="add-plan__button-plus">+</button>
-          <div class="add-plan__day-wrapper">
-            <label for="day">
-              <span>Длительность</span>
-              <span>дн.</span>
-              <input class="add-plan__field" id="day" type="text" name="day" value="2">
+          <div class="add-plan__input-number-wrapper">
+            <label class="add-plan__label" for="day">
+              <span class="add-plan__span-title">Длительность</span>
+              <span class="add-plan__quantity">дн.</span>
             </label>
+            <input class="add-plan__field" id="day" type="text" name="day" value="2">
+            <button class="add-plan__button-minus">-</button>
+            <button class="add-plan__button-plus">+</button>
           </div>
-          <button class="add-plan__button-minus">-</button>
-          <button class="add-plan__button-plus">+</button>
           <input class="add-plan__checkbox" type="checkbox" name="child" checked>
           <label for="child">Можно с детьми</label>
           <div class="add-plan__calendar">
@@ -205,7 +203,7 @@
       </div>
     </section>
 
-    <section class="route">
+    <section class="add-plan">
       <div class="route__wrapper">
         <h2 class="route__title">Шаг 2.<br>Маршрут</h2>
         <p class="rote__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
@@ -235,8 +233,7 @@
             </select>
             <button class="route__close" type="button">Закрыть</button>
           </div>
-          <div class="route__popup-wrapper">
-            <button class="route__add-country country-filter__wrapper" type="button">Добавить страну</button>
+          <button class="route__add-country" type="button">Добавить страну</button>
         </form>
         <a class="route__next button" href="#">Следующий шаг</a>
         <a class="route__prev button" href="#">На шаг назад</a>
@@ -318,19 +315,19 @@
       </div>
     </section>
 
-    <section class="entertainment">
+    <section class="add-plan">
       <div class="entertainment__wrapper">
         <h2 class="entertainment__title">Развлечения</h2>
         <p class="entertainment__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
         <form class="entertainment__form" action="https://echo.htmlacademy.ru" method="GET">
-          <div class="entertainment__wrapper">
+          <div class="entertainment__country-wrapper">
             <label class="entertainment__label" for="textarea-bos">
               <span class="entertainment__span">Босния и Герцеговина</span>
               <img class="entertainment__image" src="img/flag-bos.png" width="26" height="18" alt="Флаг Боснии и Герцеговины">
             </label>
             <textarea class="entertainment__textarea" id="textarea-bos" name="bos-comments"></textarea>
           </div>
-          <div class="entertainment__wrapper">
+          <div class="entertainment__country-wrapper">
             <label class="entertainment__label" for="textarea-czh">
               <span class="entertainment__span"> Чехия</span>
               <img class="entertainment__image" src="img/flag-czh.png" width="26" height="18" alt="Флаг Чехии">
